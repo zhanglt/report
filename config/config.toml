@@ -1,6 +1,6 @@
 [Writable]
 LogLevel = 'DEBUG'#DEBUG
-LogFile = '../weather.log'
+LogFile = '../air.log'
 
 [Service]
 ApiHost = 'http://wthrcdn.etouch.cn/weather_mini?citykey='
@@ -9,7 +9,7 @@ Timeout = 5000
 Type='postgresql'
 Host='mongodb://127.0.0.1:27017'
 DatabaseName='pub'
-TableName='weather'
+TableName='airQuality'
 
 
 [Area]
